@@ -37,15 +37,50 @@ main h2{
 }
 main .precio{
     font-size: 18px;
-    
+  text-align: left;
+  margin-bottom: 1px;
+  margin-top: 1px;
 }
 main .descuento{
     font-size: 16px;
+    color: #39b54a;
+    text-align: left;
+    margin-top: 1px
     
 }
 main h3{
     font-size: 16px ;
+    text-align: left;
     
+}
+main{
+    text-align: center;
+    width: 90vw;
+    background-color: #ebebeb;
+    margin-bottom: 20px;
+}
+article img{
+    border-bottom: 1px solid #ebebeb;
+    
+}
+.truck i{
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    padding: 15px;
+    border-radius: 50ch;
+
+
+}
+.truck{
+    text-align: left;
+    margin: 1px;
+}
+
+main article{
+    border-top: 1px solid #ebebeb;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
 }
 
 .iconFooter{
@@ -100,6 +135,7 @@ form div{
 }
 footer {
     text-align: center;
+    margin-top: 20px;
 }
 footer section p {
     color: #666;
