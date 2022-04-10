@@ -23,25 +23,133 @@ Descripciones: 16px */
     box-sizing: border-box;
 }
 
+body nav{
+    display: none;
+}
 
+.banner{
+    width: 100%;
+}
+
+
+
+
+
+
+/*----------------------------------- COMIENZO HEADER-----------------------------*/
 header{
     background-color: #EAC926;
     background-size: cover;
     font-family: "Roboto";
     font-size: 20px;
+    padding: 10px;
 }
+
 .imgMercado{
     width: 45%;
     padding-top: 20px;
     padding-left: 15px;
-}
-.compra{
-    margin-top: 0px;
-    margin-left: 80px;
-    padding: 1px;
-    font-size: 15px;
+}   
+.burguer i{
+background-color: #1259c3;
+color: white;
+display: block;
+max-width: 40px;
+padding: 10px ;
+border-radius: 8px;
+text-align: center;
+font-size: 18px;
+margin: auto;
+padding-bottom: 10px;
 }
 
+/* .menu-burguer i {
+    background-color: #1259c3;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+} */
+.main-nav ul{
+    list-style: none;
+    
+    margin: 10px;
+    padding: 0;
+    
+}
+.main-nav a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0px;
+    
+}
+
+form  i{
+    background-color: white;
+    display: flex;
+   margin: auto;
+   padding: 12px;
+   flex: wrap;
+    
+}
+
+#fname{
+    color: #666;
+    border: white solid 1px;
+}
+form.formulario{
+    padding: 25px;
+    margin : 1px;
+    margin-bottom: -29px;
+    font-size:17px;
+ display: flex;
+ border: 0px white solid;
+
+ flex: wrap;
+ ;
+}
+
+form input{
+    width: 30vw;
+    padding-right: 0px;
+    display: flex;
+    flex: wrap;
+
+}
+form div{
+    margin-bottom: 5px;
+}
+
+
+.compra{
+    margin-top: 0px;
+    margin-left: 25px;
+    padding: 1px;
+    font-size: 15px;
+    font-weight: normal;
+   margin-top: auto;
+}
+.img-form{
+    display: flex;
+    flex: wrap;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.iconMenu{
+    color: black;
+    margin: 3px;
+}
+
+
+
+/*-------------------------------------- FIN HEADER-----------------------------------*/
+
+
+/*-------------------------------------- INICIO MAIN-----------------------------------*/
 main h2{
     font-size: 24px;
 }
@@ -75,13 +183,18 @@ main{
     background-color: #ebebeb;
     margin-bottom: 20px;
 }
+
 article img{
     border-bottom: 1px solid #ebebeb;
     width: 100%;
     
 }
-body nav{
-    display: none;
+
+main article{
+    border-top: 1px solid #ebebeb;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
 }
 .truck i{
     color: #39b54a;
@@ -96,72 +209,20 @@ body nav{
     margin: 1px;
 }
 
-main article{
-    border-top: 1px solid #ebebeb;
-    margin: 10px;
-    padding: 15px;
-    background-color: white;
-}
 
+
+
+
+/*-------------------------------------- FIN MAIN   -----------------------------------*/
+
+/*-------------------------------------- INICIO FOOTER-----------------------------------*/
 .iconFooter{
     color:#1259c3;
     margin-bottom: 10px;
     font-size: 2em;
     text-align: center;
 }
-.iconMenu{
-    color: black
-}
-.menu-burguer{
-    
-    text-align: center;
-    
-}
-.menu-burguer i {
-    background-color: #1259c3;
-    border-radius: 5px;
-    color: white;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-}
 
-.lista-superior{
-    list-style: none;
-    
-    color: black;
-    padding: 0;
-    color: black
-}
-#fname{
-    color: #666
-}
-
-.banner{
-    width: 100%;
-}
-form  i{
-    background-color: white;
-    border: solid #666 1px;
-    padding: 2px;
-    margin-left: 2px
-    
-}
-
-form.formulario{
-    padding: 25px;
-    margin : 1px;
-    margin-bottom: -29px;
-    font-size:17px;
- 
-}
-form input{
-    width: 90%;
-}
-form div{
-    margin-bottom: 5px;
-}
 footer {
     text-align: center;
     margin-top: 20px;
@@ -189,12 +250,17 @@ footer h2{
     font-size: 15px;
 }
 
+/*-------------------------------------- FIN FOOTER-----------------------------------*/
 
+
+
+
+/*-------------------------------------- INICIO MEDIA QUERI 361 768-----------------------------------*/
 @media (min-width: 361px){
-    *{
+    /* *{
         box-shadow: 0px 0px 10px rgb(100,100,100);
 
-}
+} */
 body nav{
     display: block;
 }
@@ -204,30 +270,101 @@ main h3{
     display: block;
     
 }
-.menu-burguer{
+.burguer{
     display: none;
 }
+.formulario{
+    display: flex;
+}
 
+/*-------------------------------------- FIN MEDIA QUERI 361 768-----------------------------------*/
+
+/*-------------------------------------- INICIO MEDIA QUERI 769  INFINITO-----------------------------------*/
 
 }
 @media(min-width: 769px ){
 
     
-    *{
-        box-shadow: 0px 0px 10px rgb(100,100,100);
+ 
+
+.imgMercado{
+    width: 180px;
+}
+.formulario{
+    display: flex;
+}
+
+.top-bar{
+display: flex;
+justify-content: space-between;
+
+}
+.compra{
+    
+
+font-size: 25px;
+text-align: right;
+padding-left: 0px;
+margin-top: auto;
+margin-left: 0px;
+
+}
+.top-bar h2{
+    padding-left: 0px;
+}
+
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
 
 }
 
-body nav{
-    display: block;
+.main-nav ul{
+    display: flex;
+    font-size: 18px;
+}
+
+.main-nav li{
+    margin: 0 4px
 }
 main h3{
   
     display: block;
     
 }
-.menu-burguer{
+.burguer{
     display: none;
 }
 
 }
+/*-------------------------------------- FIN MEDIA QUERI 768 1199-----------------------------------*/
+
+/*-------------------------------------- INICIO MEDIA QUERI 1200 INFINITO-----------------------------------*/
+@media (min-width: 1200px ){
+
+.top-bar, .main-nav{
+max-width: 1200px;
+
+margin: auto;
+    }
+
+    .main-nav li{
+       font-size: 19px;
+   }
+.compra{
+    align-items: flex-end;
+  
+    
+}
+
+.top-bar{
+   
+    display: flex;
+    align-items: flex-end;
+}
+
+}
+
+
+/*-------------------------------------- FIN MEDIA QUERI 1200 INFINITO-----------------------------------*/
