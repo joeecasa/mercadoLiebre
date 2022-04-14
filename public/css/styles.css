@@ -1,4 +1,4 @@
-/* Paleta de colores
+ /* Paleta de colores
 Amarillo: #EAC926;
 Azul: #03264C;
 Celeste: #1259c3;
@@ -15,15 +15,16 @@ Cuerpos de texto: 12px
 Titulares (Basado en tu última visita/Ofertas): 24px
 Precios: 18px
 Descuentos: 16px
-Descripciones: 16px */
+Descripciones: 16px  */
 
 
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    }
+}
+
 body nav {
     display: none;
 }
@@ -32,7 +33,9 @@ body nav {
     width: 100%;
 }
 
-
+* {
+    font-family: "roboto";
+}
 
 
 
@@ -92,10 +95,10 @@ header {
 
 .lupa {
     background-color: white;
-  align-items: center;
-  display: flex;
-  padding: 3px;
-  margin-bottom: 0px;
+    align-items: center;
+    display: flex;
+    padding: 3px;
+    margin-bottom: 0px;
 }
 
 
@@ -112,22 +115,17 @@ header {
     margin-bottom: -29px;
     font-size: 17px;
     display: flex;
-    
+
     width: 50%;
 }
 
-form input {
+#fname {
     width: 100%;
     padding-right: 0px;
     display: flex;
 
 
 }
-
-form div {
-    margin-bottom: 5px;
-}
-
 
 .compra {
     margin-top: 0px;
@@ -157,42 +155,44 @@ form div {
 
 
 /*-------------------------------------- INICIO MAIN-----------------------------------*/
-main h2 {
+.main-index h2 {
     font-size: 24px;
 }
 
-main .precio {
+.precio {
     font-size: 18px;
     text-align: left;
     margin-bottom: 1px;
     margin-top: 1px;
 }
 
-main .descuento {
+.descuento {
     font-size: 16px;
     color: #39b54a;
     text-align: left;
     margin-top: 1px
 }
 
-main h3 {
+.main-index h3 {
     font-size: 16px;
     text-align: left;
-   padding-top: 15px;
+    padding-top: 15px;
 
 }
 
-main section h2 {
-    text-align: left;
+.main-index h2 {
+    text-align: center;
     margin-left: 15px;
+    padding: 10px;
 }
 
-main {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vw;
+.main-index{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
     background-color: #ebebeb;
     margin-bottom: 20px;
+    
 }
 
 article img {
@@ -201,7 +201,7 @@ article img {
 
 }
 
-main article {
+.main-index article {
     border-top: 1px solid #ebebeb;
     margin: 10px;
     padding: 15px;
@@ -221,35 +221,192 @@ main article {
     text-align: right;
     margin: 1px;
 }
-.prec-desc{
+
+.prec-desc {
 
     display: flex;
     flex-wrap: wrap;
-    
-}
-.prec-desc .precio{
-    width: 30%;
-}
-.prec-desc .descuento{
-    width: 70%;
-    padding-left: 5px;
-    
+
 }
 
-.section-product{
+.prec-desc .precio {
+    width: 30%;
+}
+
+.prec-desc .descuento {
+    width: 70%;
+    padding-left: 5px;
+
+}
+
+.section-product {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
+
+
+}
+
+.product {
+    width: 100%;
+}
+/*-------------------------------------- FIN MAIN INDEX   -----------------------------------*/
+
+/*-------------------------------------- REGISTRO   -----------------------------------*/
+
+
+
+.form-Reg{
+background-color: #ebebeb;
+width: 65%;
+
+padding: 5px;
+margin: 20px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.form__nombre{
+margin-bottom: 20px;
+margin-top: 0px;
+padding-top: 15px;
+
+}
+.form__nombre input{
+    border: none;
+padding-top: 8px;
+padding-bottom: 8px;
+font-size: 15px;
+width: 85%;
+margin-left: 10px;
+
+}
+.form__usuario{
+    margin-bottom: 20px;
+    padding-top: 15px;
+    }
+    .form__usuario input{
+        border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    width: 85%;
+    margin-left: 10px;
     
+    }
+    .form__fecha input{
+        display: block;
+        
+    color: #9a9a9a;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    width: 85%;
 
 }
-.product{
-width: 100%;
+.form__fecha label{
+margin-bottom: 10px;
+font-weight: bold;
+margin-left: 10px;
+
+
+}
+.form__domicilio{
+    margin-bottom: 20px;
 }
 
+.form__domicilio input{
+    border: none;
+padding-top: 8px;
+padding-bottom: 8px;
+font-size: 15px;
+width: 85%;
+margin-left: 10px;}
 
 
-/*-------------------------------------- FIN MAIN   -----------------------------------*/
+
+
+
+
+.form__interes label {
+    display: block;
+    width: 100%;
+
+
+}
+.form__perfil__title{
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-bottom: 20px;    
+    }
+
+
+
+
+
+
+
+/*---------------------------------------------------LOGIN-------------------------------------------*/
+
+.button-login {
+    background-color: #1259c3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    color: white;
+    max-width: 600px;
+    text-align: center;
+    
+}
+.usuario{
+
+    text-align: center;
+
+}
+
+.section-login__button{
+
+    text-align: center;
+}
+.section-login{
+    background-color:#ebebeb  ;
+    width: 100%;
+   
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.usuario__nombre input{
+    border: none;
+    margin: 20px;
+    width: 90%;
+   max-width: 600px;
+   padding: 5px;
+   margin-top: 30px;
+   
+}
+.usuario__pass input{
+    border: none;
+    margin: 20px;
+    width: 90%;
+   max-width: 600px;
+   padding: 5px;
+
+}
+/*---------------------------------------------------LOGIN-------------------------------------------*/
+
+
+
+
 
 /*-------------------------------------- INICIO FOOTER-----------------------------------*/
 .iconFooter {
@@ -315,9 +472,9 @@ footer h2 {
         display: none;
     }
 
-   
 
-    
+
+
 
     /*-------------------------------------- FIN MEDIA QUERI 361 768-----------------------------------*/
 
@@ -334,7 +491,7 @@ footer h2 {
         width: 180px;
     }
 
-  
+
 
     .top-bar {
         display: flex;
@@ -384,8 +541,8 @@ footer h2 {
         display: none;
     }
 
-   
-    .product{
+
+    .product {
         width: 44%;
     }
 
@@ -396,7 +553,7 @@ footer h2 {
 /*-------------------------------------- INICIO MEDIA QUERI 1200 INFINITO-----------------------------------*/
 @media (min-width: 1200px) {
 
-    
+
     .main-nav {
         max-width: 1200px;
 
@@ -407,15 +564,15 @@ footer h2 {
         font-size: 19px;
     }
 
-    .compra{
+    .compra {
         width: 50%;
         padding-left: 0%;
     }
 
-    
-.product{
-    width: 22%;
-}
+
+    .product {
+        width: 22%;
+    }
 
 }
 

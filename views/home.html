@@ -22,7 +22,7 @@
             <div class="img-form">
                 <img src="img/logo-mercado-liebre.svg" alt="logo mercado liebre" class="imgMercado">
 
-                <form class="formulario" action="/action_page.php">
+                <form class="formulario" action="/action_page.php" method="GET">
                     <label for="fname"></label>
                     <input type="text" id="fname" name="fname" value="Buscar productos, marcas">
                     <div class="lupa"><i class="fa-solid fa-magnifying-glass"></i></div>
@@ -35,7 +35,6 @@
             <h2 class="compra"><i class="fa-solid fa-hand-holding-dollar"></i>
                 Comprá en cuotas y sin tarjeta de credito
             </h2>
-
 
         </div>
 
@@ -53,9 +52,9 @@
 
             <ul class="lista-superior">
 
-                <li><a href="#">Creá tu cuenta<span class="iconMenu"><i class="fa-solid fa-id-card"></i></span> </a>
+                <li><a href="/registro">Creá tu cuenta<span class="iconMenu"><i class="fa-solid fa-id-card"></i></span> </a>
                 </li>
-                <li><a href="#">Ingresá<span class="iconMenu"><i
+                <li><a href="/login">Ingresá<span class="iconMenu"><i
                                 class="fa-solid fa-arrow-right-to-bracket"></i></span></a></li>
                 <li><a href="#">Mis compras<span class="iconMenu"><i class="fa-solid fa-bag-shopping"></i></span></a>
                 </li>
@@ -72,12 +71,16 @@
 
     </header>
 
+
+
+
+
     <img class="banner" src="img/img-home-banner.jpg" alt="banner de ofertas">
 
 
-    <main>
+    <main class="main-index">
 
-        <section>
+        <section class="main-index__section1">
 
 
             <h2>Basado en tu ultima vista</h2>
