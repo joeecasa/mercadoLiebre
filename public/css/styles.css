@@ -1,4 +1,4 @@
- /* Paleta de colores
+/* Paleta de colores
 Amarillo: #EAC926;
 Azul: #03264C;
 Celeste: #1259c3;
@@ -20,9 +20,9 @@ Descripciones: 16px  */
 
 
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 body nav {
@@ -50,36 +50,27 @@ header {
 }
 
 .imgMercado {
-    width: 50%;
     padding-top: 20px;
     padding-left: 15px;
+    width: 50%;
 }
 
 .burguer i {
     background-color: #1259c3;
+    border-radius: 8px;
     color: white;
     display: block;
-    max-width: 40px;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
     font-size: 18px;
     margin: auto;
+    max-width: 40px;
+    padding: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
-/* .menu-burguer i {
-    background-color: #1259c3;
-    border-radius: 5px;
-    color: white;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-} */
+
 .main-nav ul {
     list-style: none;
-
     margin: 10px;
     padding: 0;
 
@@ -87,18 +78,19 @@ header {
 
 .main-nav a {
     color: black;
-    text-decoration: none;
     display: inline-block;
     padding: 5px 0px;
+    text-decoration: none;
 
 }
 
 .lupa {
-    background-color: white;
     align-items: center;
+    background-color: white;
+    border: none;
     display: flex;
-    padding: 3px;
     margin-bottom: 0px;
+    padding: 3px;
 }
 
 
@@ -110,30 +102,29 @@ header {
 }
 
 .formulario {
-    padding: 25px;
+    display: flex;
+    font-size: 17px;
     margin-right: 10px;
     margin-bottom: -29px;
-    font-size: 17px;
-    display: flex;
-
+    padding: 25px;
     width: 50%;
 }
 
 #fname {
-    width: 100%;
-    padding-right: 0px;
     display: flex;
+    padding-right: 0px;
+    width: 100%;
 
 
 }
 
 .compra {
+    font-weight: normal;
+    font-size: 15px;
     margin-top: 0px;
     margin-left: 25px;
-    padding: 1px;
-    font-size: 15px;
-    font-weight: normal;
     margin-top: auto;
+    padding: 1px;
 }
 
 .img-form {
@@ -156,43 +147,43 @@ header {
 
 /*-------------------------------------- INICIO MAIN-----------------------------------*/
 .main-index h2 {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .precio {
     font-size: 18px;
-    text-align: left;
     margin-bottom: 1px;
     margin-top: 1px;
+    text-align: left;
 }
 
 .descuento {
-    font-size: 16px;
     color: #39b54a;
+    font-size: 16px;
+    margin-top: 1px;
     text-align: left;
-    margin-top: 1px
 }
 
 .main-index h3 {
     font-size: 16px;
-    text-align: left;
     padding-top: 15px;
+    text-align: left;
 
 }
 
 .main-index h2 {
-    text-align: center;
     margin-left: 15px;
     padding: 10px;
+    text-align: center;
 }
 
-.main-index{
+.main-index {
+    background-color: #ebebeb;
     margin-left: 5px;
     margin-right: 5px;
-    width: 100%;
-    background-color: #ebebeb;
     margin-bottom: 20px;
-    
+    width: 100%;
+
 }
 
 article img {
@@ -203,23 +194,23 @@ article img {
 
 .main-index article {
     border-top: 1px solid #ebebeb;
+    background-color: white;
     margin: 10px;
     padding: 15px;
-    background-color: white;
 }
 
 .truck i {
-    color: #39b54a;
     border: 1px solid #39b54a;
-    padding: 15px;
     border-radius: 50ch;
+    color: #39b54a;
+    padding: 15px;
 
 
 }
 
 .truck {
-    text-align: right;
     margin: 1px;
+    text-align: right;
 }
 
 .prec-desc {
@@ -234,16 +225,16 @@ article img {
 }
 
 .prec-desc .descuento {
-    width: 70%;
     padding-left: 5px;
+    width: 70%;
 
 }
 
 .section-product {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: center;
+    width: 100%;
 
 
 }
@@ -251,87 +242,167 @@ article img {
 .product {
     width: 100%;
 }
+
 /*-------------------------------------- FIN MAIN INDEX   -----------------------------------*/
 
 /*-------------------------------------- REGISTRO   -----------------------------------*/
 
 
 
-.form-Reg{
-background-color: #ebebeb;
-width: 65%;
-
-padding: 5px;
-margin: 20px;
-margin-left: auto;
-margin-right: auto;
-
-}
-
-.form__nombre{
-margin-bottom: 20px;
-margin-top: 0px;
-padding-top: 15px;
+.form-Reg {
+    background-color: #ebebeb;
+    margin-right: auto;
+    margin: 20px;
+    margin-left: auto;
+    padding: 5px;
+    width: 65%;
 
 }
-.form__nombre input{
-    border: none;
-padding-top: 8px;
-padding-bottom: 8px;
-font-size: 15px;
-width: 85%;
-margin-left: 10px;
 
-}
-.form__usuario{
+.form__nombre {
     margin-bottom: 20px;
-    padding-top: 15px;
-    }
-    .form__usuario input{
-        border: none;
+    margin-top: 0px;
+    padding-top: 20px;
+
+}
+.form__nombre label{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+
+.form__nombre input {
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 15px;
     padding-top: 8px;
     padding-bottom: 8px;
-    font-size: 15px;
+    padding-left: 5px;
     width: 85%;
+
+}
+
+.form__nombre input:invalid {
+    border: 2px solid red;
+  }
+  
+  .form__nombre input:valid {
+    border: 2px solid #39b54a;
+  }
+  .form__nombre input:focus{
+outline: none
+
+
+  }
+
+
+.form__usuario {
+    margin-bottom: 20px;
+   
+}
+
+.form__usuario input {
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
     margin-left: 10px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    width: 85%;
+
+}
+.form__usuario label{
+
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+
     
-    }
-    .form__fecha input{
-        display: block;
-        
+
+}
+.form__usuario input:invalid {
+    border: 2px solid red;
+  }
+  
+  .form__usuario input:valid {
+    border: 2px solid #39b54a;
+  }
+  .form__usuario input:focus{
+outline: none
+
+
+  }
+
+
+
+
+
+
+
+  .form__fecha input {
+    border-radius: 7px;
+    
+    border: none;
     color: #9a9a9a;
+    display: block;
+    font-size: 15px;
     margin-bottom: 20px;
     margin-top: 10px;
     margin-left: 10px;
-    border: none;
     padding-top: 8px;
     padding-bottom: 8px;
-    font-size: 15px;
     width: 85%;
+}
+
+
+
+
+
+
+
+.form__fecha label {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+
+
 
 }
-.form__fecha label{
-margin-bottom: 10px;
-font-weight: bold;
-margin-left: 10px;
 
-
-}
-.form__domicilio{
+.form__domicilio {
     margin-bottom: 20px;
 }
 
-.form__domicilio input{
+.form__domicilio input {
     border: none;
-padding-top: 8px;
-padding-bottom: 8px;
-font-size: 15px;
-width: 85%;
-margin-left: 10px;}
+    border-radius: 7px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    width: 85%;
+    
+}
+.form__domicilio label{
+
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    padding-bottom: 10px;
 
 
 
-
+}
 
 
 .form__interes label {
@@ -340,68 +411,185 @@ margin-left: 10px;}
 
 
 }
-.form__perfil__title{
-    margin-bottom: 10px;
+
+.form__perfil__title {
+    margin-bottom: 20px;
+    margin-left: 10px;
     font-weight: bold;
-    padding-bottom: 20px;    
-    }
+    padding-bottom: 20px;
+
+}
+
+.compr-vend {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.form-check-compr {
+    padding-left: 10px;
+
+
+
+}
+
+.form-check-compr label {
+    margin-left: 20px;
+
+}
+
+.form__interes__check {
+    margin-bottom: 10px;
+    margin-left: 35px;
+    padding-bottom: 10px;
+
+
+
+}
+
+.form__interes__title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+.form__imagen {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+.form__imagen input {
+margin-top: 10px;
+}
+
+.form__password input{
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 85%;
+}
+
+.form__password__title{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+
+
+}
+
+.form__confirm input{
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 85%;
+
+}
+
+.form__confirm__title{
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+ 
+
+
+
+}
+
+
+.form__button{
+
+background-color: #1259c3;
+border: none;
+border-radius: 10px;
+color: white;
+padding: 10px 20px;
+
+}
+.contenedor_button{
+display: flex;
+justify-content: space-around;
+}
 
 
 
 
-
+/*---------------------------------------------------REGISTRO-------------------------------------------*/
 
 
 /*---------------------------------------------------LOGIN-------------------------------------------*/
 
 .button-login {
     background-color: #1259c3;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 90%;
     border-radius: 5px;
     margin-bottom: 50px;
     margin-top: 30px;
-    color: white;
     max-width: 600px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
-    
+    width: 90%;
+
 }
-.usuario{
+
+.usuario {
 
     text-align: center;
 
 }
 
-.section-login__button{
+.section-login__button {
 
     text-align: center;
 }
-.section-login{
-    background-color:#ebebeb  ;
-    width: 100%;
-   
+
+.section-login {
+    background-color: #ebebeb;
     margin-top: 0px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
-.usuario__nombre input{
+.usuario__nombre input {
     border: none;
+    border-radius: 5px ;
     margin: 20px;
+    max-width: 600px;
+    margin-top: 30px;
+    padding: 5px;
     width: 90%;
-   max-width: 600px;
-   padding: 5px;
-   margin-top: 30px;
-   
+    
 }
-.usuario__pass input{
-    border: none;
-    margin: 20px;
-    width: 90%;
-   max-width: 600px;
-   padding: 5px;
 
+.usuario__pass input {
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    max-width: 600px;
+    padding: 5px;
+    width: 90%;
+    
 }
+
 /*---------------------------------------------------LOGIN-------------------------------------------*/
 
 
@@ -411,16 +599,16 @@ margin-left: 10px;}
 /*-------------------------------------- INICIO FOOTER-----------------------------------*/
 .iconFooter {
     color: #1259c3;
-    margin-bottom: 10px;
     font-size: 2em;
+    margin-bottom: 10px;
     text-align: center;
 }
 
 footer {
-    text-align: center;
-    margin-top: 20px;
     font-family: "Roboto";
+    margin-top: 20px;
     margin-left: 0px;
+    text-align: center;
 }
 
 footer section p {
@@ -435,15 +623,14 @@ footer section p {
 
 footer h2 {
     color: #666;
-
     margin-bottom: 0px;
     margin-top: 10px;
 }
 
 .copy {
-    text-align: left;
-    padding-left: 1px;
     font-size: 15px;
+    padding-left: 1px;
+    text-align: left;
 }
 
 /*-------------------------------------- FIN FOOTER-----------------------------------*/
@@ -451,7 +638,7 @@ footer h2 {
 
 
 
-/*-------------------------------------- INICIO MEDIA QUERI 361 768-----------------------------------*/
+/*-------------------------------------- INICIO MEDIA QUERI 361 576-----------------------------------*/
 @media (min-width: 361px) {
 
     /* *{
@@ -476,9 +663,37 @@ footer h2 {
 
 
 
-    /*-------------------------------------- FIN MEDIA QUERI 361 768-----------------------------------*/
+    /*-------------------------------------- FIN MEDIA QUERI 361 576-----------------------------------*/
+    /*-------------------------------------- INICIO MEDIA QUERI 576 769-----------------------------------*/
 
-    /*-------------------------------------- INICIO MEDIA QUERI 769  1199-----------------------------------*/
+    @media(min-width: 576px) {
+
+        .compra {
+
+            text-align: center;
+        }
+
+        .main-nav {
+
+            text-align: center;
+
+
+
+        }
+
+
+
+
+
+
+    }
+
+
+
+
+    /*-------------------------------------- FIN MEDIA QUERI 576 769-----------------------------------*/
+
+    /*-------------------------------------- INICIO MEDIA QUERI 769  992-----------------------------------*/
 
 }
 
@@ -503,16 +718,16 @@ footer h2 {
 
 
         font-size: 25px;
-        text-align: right;
-        padding-left: 0px;
         margin-top: auto;
         margin-left: 0px;
+        padding-left: 0px;
+        text-align: right;
 
     }
 
     .top-bar h2 {
-        padding-left: 0px;
         margin-left: -150px;
+        padding-left: 0px;
     }
 
 
@@ -548,10 +763,10 @@ footer h2 {
 
 }
 
-/*-------------------------------------- FIN MEDIA QUERI 768 1199-----------------------------------*/
+/*-------------------------------------- FIN MEDIA QUERI 768 992-----------------------------------*/
 
-/*-------------------------------------- INICIO MEDIA QUERI 1200 INFINITO-----------------------------------*/
-@media (min-width: 1200px) {
+/*-------------------------------------- INICIO MEDIA QUERI 992 INFINITO-----------------------------------*/
+@media (min-width: 992px) {
 
 
     .main-nav {
@@ -565,8 +780,8 @@ footer h2 {
     }
 
     .compra {
-        width: 50%;
         padding-left: 0%;
+        width: 50%;
     }
 
 
