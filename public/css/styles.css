@@ -165,30 +165,25 @@ header {
 }
 
 .main-index h3 {
+    color: #666;
     font-size: 16px;
     padding-top: 15px;
     text-align: left;
-  display: none;
-/*opacity: 0; esta opcion es haciendolo transparente*/
+    /*opacity: 0; esta opcion es haciendolo transparente*/
 }
 
-.product{
+.product {
     transition: all 0.8s;
 }
-.product:hover h3{
-    display: block;
-  
- /*opacity: 1; esta opcion es haciendolo transparente*/
-}
-.product:hover{
-   background-color: grey;
-    
-}
+
+
 
 .main-index h2 {
     margin-left: 15px;
     padding: 10px;
     text-align: center;
+    font-size: 30px;
+    color: #3c3a3a;
 }
 
 .main-index {
@@ -212,21 +207,29 @@ header {
     margin: 10px;
     padding: 15px;
     border-bottom: 1px solid grey;
+    
+    
 }
+
+.main-index article:hover .truck i{
+   transition: 2s;
+    transform: rotatez(-90deg);
+}
+.main-index article:hover{
+    box-shadow: 1px 1px 15px grey;
+}
+
 
 .truck i {
     border: 1px solid #39b54a;
     border-radius: 50ch;
     color: #39b54a;
     padding: 15px;
-    transition: all 2s;
+    
 
 }
 
-.truck i:hover{
-    transform: rotatez(-90deg);
-  
-}
+
 
 .truck {
     margin: 1px;
@@ -635,7 +638,7 @@ header {
 
 .form-login label:hover {
     color: #095484;
-    
+
 }
 
 
@@ -697,6 +700,28 @@ footer {
     padding-left: 1px;
     text-align: left;
 }
+.section-paga .iconFooter i{
+    transition: all 0.8s;
+}
+.section-paga:hover .iconFooter i{
+    color: #39b54a;
+    transform: scale(1.2);
+}
+.section-envio .iconFooter i{
+    transition: all 0.8s;
+}
+.section-envio:hover .iconFooter i{
+    color: #39b54a;
+    transform: scale(1.2);
+}
+.section-seg .iconFooter i{
+    transition: all 0.8s;
+}
+.section-seg:hover .iconFooter i{
+   color: #39b54a;
+    transform: scale(1.2);
+}
+
 
 /*-------------------------------------- FIN FOOTER-----------------------------------*/
 
@@ -826,7 +851,12 @@ footer {
         width: 44%;
     }
 
-
+    .cont-footer{
+        display: flex;
+    
+    
+    }
+    
 
 
 
@@ -857,6 +887,7 @@ footer {
 
     .product {
         width: 22%;
+
     }
 
     .section-product {
@@ -866,9 +897,21 @@ footer {
 
     .main-index article {
         border-bottom: none;
+        
     }
 
+    .product h3{
+        display: none;
+        
+        
+    }
 
+    .product:hover h3 {
+        display: block;
+        transition: all 5s;
+
+        /*opacity: 1; esta opcion es haciendolo transparente*/
+    }
 
 
 }
