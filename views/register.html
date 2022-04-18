@@ -76,32 +76,42 @@
 <body class="body-register">
     <main class="main-register">
 
-        
-        <form  action="/" method="POST" class="form-Reg">
+
+        <form action="/" method="POST" class="form-Reg">
 
             <div class="form__nombre">
-                <label for="nombre">Nombre y Apellido</label>
-                <input type="text" name="Nombre" id="nombre" placeholder=" Introduzca su Nombre y apellido" minlength="2" required >
+                <label for="nombre">Nombre y Apellido
+                    <input type="text" name="Nombre" id="nombre" placeholder=" Introduzca su Nombre y apellido"
+                        minlength="2" required>
+                </label>
             </div>
             <div class="form__usuario">
-                <label for="usuario">Nombre de usuari@</label>
-                <input type="text" name="usuario" id="usuario" placeholder="Introduzca su Nombre de usuari@" minlength="2" required >
+                <label for="usuario">Nombre de usuari@
+                    <input type="text" name="usuario" id="usuario" placeholder="Introduzca su Nombre de usuari@"
+                        minlength="2" required>
+                </label>
             </div>
             <div class="form__fecha">
-                <label for="fecha">Fecha de nacimiento</label>
-                <input type="date" name="fecha" id="fecha" value="fecha" required>
+                <label for="fecha">Fecha de nacimiento
+                    <input type="date" name="fecha" id="fecha" value="fecha" required>
+                </label>
 
             </div>
             <div class="form__domicilio">
-                <label for="domicilio">Domicilio</label><br>
-                <input type="text" name="domicilio" id="domicilio" placeholder=" Introduzca su Domicilio" required>
+                <label for="domicilio">Domicilio<br>
+                    <input type="text" name="domicilio" id="domicilio" placeholder=" Introduzca su Domicilio" required>
+                </label>
             </div>
+
+
             <div class="form__perfil">
-                <label for="domicilio" class="form__perfil__title" required      >Perfil del usuario</label>
+                <label for="perfil" class="form__perfil__title" required>
+                    Perfil del usuario
+                </label>
                 <div class="compr-vend">
                     <div class="form-check-compr">
                         <input type="radio" name="venta-compra" id="comprador" required>
-                        <label for="comprador" required >Comprador</label>
+                        <label for="comprador" required>Comprador</label>
 
                     </div>
                     <div class="form-check-compr">
@@ -111,57 +121,60 @@
                         <label for="vendedor">Vendedor</label>
 
                     </div>
-
-
-
                 </div>
+            </div>
 
 
+            <div class="form__interes">
+                <label class="form__interes__title" for="Intereses">Intereses</label>
+                <label class="form__interes__check" for="electro">
+                    <input type="checkbox" name="interes" id="electro">
+                    Electro
+                </label>
+                <label class="form__interes__check" for="moda">
+                    <input type="checkbox" name="interes" id="moda">
+                    Moda
+                </label>
+                <label class="form__interes__check" for="hogar">
+                    <input type="checkbox" name="interes" id="hogar">
+                    Hogar
+                </label>
+                <label class="form__interes__check" for="jugueteria">
+                    <input type="checkbox" name="interes" id="jugueteria">
+                    Jugueteria
+                </label>
+                <label class="form__interes__check" for="vidasana">
+                    <input type="checkbox" name="interes" id="vidasana">
+                    Vida sana
+                </label>
+            </div>
 
-                <div class="form__interes">
-                    <label class="form__interes__title" for="Intereses">Intereses</label>
-                    <label class="form__interes__check" for="interes">
-                        <input type="checkbox" name="interes">
-                        Electro
-                    </label>
-                    <label class="form__interes__check" for="interes">
-                        <input type="checkbox" name="interes">
-                        Moda
-                    </label>
-                    <label class="form__interes__check" for="interes">
-                        <input type="checkbox" name="interes">
-                        Hogar
-                    </label>
-                    <label class="form__interes__check" for="interes">
-                        <input type="checkbox" name="interes">
-                        Jugueteria
-                    </label>
-                    <label class="form__interes__check" for="interes">
-                        <input type="checkbox" name="interes">
-                        Vida sana
-                    </label>
-                </div>
 
-
-                <div class="form__imagen">
-                    <label for="photo">Seleccionar una imagen para el perfil</label>
-
+            <div class="form__imagen">
+                <label for="photo">Seleccionar una imagen para el perfil
                     <div class="file-select"><input type="file" name="Photo" accept=".jpg,jpeg"></div>
+                </label>
 
-                </div>
-                <div class="form__password">
-                    <label class="form__password__title" for="pass">Contraseña</label><br>
-                    <input type="password" name="pass" id="pass" placeholder="Introduzca su contraseña" required minlength="5" maxlength="10">
-                </div>
-                <div class="form__confirm">
-                    <label class="form__confirm__title" for="pass">Confirmar contraseña</label>
-                    <input type="password" name="pass" id="pass" placeholder="Introduzca su contraseña nuevamente" required minlength="5" maxlength="10">
-                </div>
-                <div class="contenedor_button" >
-                    <button class="form__button" type="submit" >Borrar</button>
-                    <button class="form__button" type="submit" >Enviar</button>
 
-                </div>
+
+            </div>
+            <div class="form__password">
+                <label class="form__password__title" for="pass">Contraseña<br>
+                    <input type="password" name="pass" id="pass" placeholder="Introduzca su contraseña" required
+                        minlength="5" maxlength="10">
+                </label>
+            </div>
+            <div class="form__confirm">
+                <label class="form__confirm__title" for="conf-pass">Confirmar contraseña<br>
+                    <input type="password" name="pass" id="conf-pass" placeholder="Introduzca su contraseña nuevamente"
+                        required minlength="5" maxlength="10">
+                </label>
+            </div>
+            <div class="contenedor_button">
+                <button class="form__button" type="submit">Borrar</button>
+                <button class="form__button" type="submit">Enviar</button>
+
+            </div>
 
 
 
@@ -184,14 +197,14 @@
         </section>
         <section>
             <div class="iconFooter"><i class="fa-solid fa-gift"></i></div>
-            <h2 >Envío gratis desde $ 2.500</h2>
-            <p class="section-paga__p" >Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            <h2>Envío gratis desde $ 2.500</h2>
+            <p class="section-paga__p">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                 productos. Es un beneficio de Mercado Puntos.</p>
         </section>
         <section>
             <div class="iconFooter"><i class="fa-solid fa-user-shield"></i></div>
             <h2>Seguridad, de principio a fin</h2>
-            <p class="section-paga__p" >¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            <p class="section-paga__p">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                 porque estás siempre protegid@.</p>
         </section>
         <br>

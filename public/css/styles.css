@@ -168,7 +168,21 @@ header {
     font-size: 16px;
     padding-top: 15px;
     text-align: left;
+  display: none;
+/*opacity: 0; esta opcion es haciendolo transparente*/
+}
 
+.product{
+    transition: all 0.8s;
+}
+.product:hover h3{
+    display: block;
+  
+ /*opacity: 1; esta opcion es haciendolo transparente*/
+}
+.product:hover{
+   background-color: grey;
+    
 }
 
 .main-index h2 {
@@ -205,8 +219,13 @@ header {
     border-radius: 50ch;
     color: #39b54a;
     padding: 15px;
+    transition: all 2s;
 
+}
 
+.truck i:hover{
+    transform: rotatez(-90deg);
+  
 }
 
 .truck {
@@ -236,8 +255,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-
-
 }
 
 .product {
@@ -496,7 +513,7 @@ header {
     border-radius: 10px;
     color: white;
     padding: 10px 20px;
-
+    transition: all 0.3s;
 }
 
 .contenedor_button {
@@ -518,6 +535,8 @@ header {
 
 .form__button:hover {
     background-color: #0666a3;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .form-Reg input[type="text"]:focus:required:valid {
@@ -551,7 +570,7 @@ header {
 
 .button-login {
     background-color: #1259c3;
-    border-radius: 5px;
+    border-radius: 8px;
     color: white;
     margin-bottom: 50px;
     margin-top: 30px;
@@ -559,7 +578,9 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    transition: all 0.4s;
     width: 90%;
+
 
 }
 
@@ -614,10 +635,14 @@ header {
 
 .form-login label:hover {
     color: #095484;
+    
 }
 
+
 .button-login:hover {
-    background-color: #0666a3;
+    background-color: #0022AA;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .form-login input[type="text"]:focus:required:valid {
@@ -651,6 +676,7 @@ footer {
 
 .section-paga__p {
     color: #666;
+    font-size: 15px;
     margin-bottom: 50px;
     margin-left: 1px;
     margin-right: 1px;
@@ -661,6 +687,7 @@ footer {
 
 .footer h2 {
     color: #666;
+    font-size: 20px;
     margin-bottom: 0px;
     margin-top: 10px;
 }
@@ -832,13 +859,14 @@ footer {
         width: 22%;
     }
 
-.section-product{
+    .section-product {
 
-    border-bottom: solid 1px grey;
-}
-.main-index article{
-    border-bottom: none;
-}
+        border-bottom: solid 1px grey;
+    }
+
+    .main-index article {
+        border-bottom: none;
+    }
 
 
 
