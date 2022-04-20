@@ -1,25 +1,25 @@
-:root{
+:root {
 
 
 
-/* Paleta de colores */
---Amarillo: #EAC926;
---Azul: #03264C;
---Celeste: #1259c3;
---Gris-oscuro: #666;
---Gris-claro: #ebebeb;
---Verde: #39b54a;
+    /* Paleta de colores */
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
 
-/* ● Tipografías
+    /* ● Tipografías
 Familia: 'Roboto' */
-/* Nos envían esta demo de cómo cargar fuentes de Google Fonts. Además
+    /* Nos envían esta demo de cómo cargar fuentes de Google Fonts. Además
 podemos consultar el siguiente recurso aquí, para más detalle.
 ● Tamaños Tipográficos
 Cuerpos de texto: 12px
 Titulares (Basado en tu última visita/Ofertas): 24px
 Precios: 18px
 Descuentos: 16px
-Descripciones: 16px  */ 
+Descripciones: 16px  */
 
 }
 
@@ -29,16 +29,16 @@ Descripciones: 16px  */
     margin: 0px;
     padding: 0px;
 }
-body{
-min-width: 360px;
+
+body {
+    min-width: 360px;
 }
+
 body nav {
     display: none;
 }
 
-.banner {
-    width: 100%;
-}
+
 
 * {
     font-family: "roboto";
@@ -62,7 +62,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
 .top-bar__img {
@@ -97,8 +97,8 @@ header {
 }
 
 .top-bar__text {
-   text-align: center;
-   padding: 10px;
+    text-align: center;
+    padding: 10px;
     width: 100%;
 }
 
@@ -108,6 +108,7 @@ header {
     padding: 0;
 
 }
+
 .burguer i {
     background-color: #1259c3;
     border-radius: 8px;
@@ -154,44 +155,8 @@ header {
 
 
 /*-------------------------------------- INICIO MAIN INDEX-----------------------------------*/
-.main-index h2 {
-    font-size: 18px;
-}
-
-.precio {
-    font-size: 18px;
-    margin-bottom: 1px;
-    margin-top: 1px;
-    text-align: left;
-}
-
-.descuento {
-    color: #39b54a;
-    font-size: 16px;
-    margin-top: 1px;
-    text-align: left;
-}
-
-.main-index h3 {
-    color: #666;
-    font-size: 16px;
-    padding-top: 15px;
-    text-align: left;
-    /*opacity: 0; esta opcion es haciendolo transparente*/
-}
-
-.product {
-    transition: all 0.8s;
-}
-
-
-
-.main-index h2 {
-    margin-left: 15px;
-    padding: 10px;
-    text-align: center;
-    font-size: 30px;
-    color: #3c3a3a;
+.banner {
+    width: 100%;
 }
 
 .main-index {
@@ -204,10 +169,12 @@ header {
 
 }
 
-.product img {
-    border-bottom: 1px solid #ebebeb;
-    width: 100%;
-
+.main-index h2 {
+    margin-left: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #3c3a3a;
 }
 
 .main-index article {
@@ -216,52 +183,10 @@ header {
     margin: 10px;
     margin-bottom: 35px;
     padding: 15px;
-  
-
-
-}
-
-.main-index article:hover .truck i {
-    transition: 2s;
-    transform: rotatez(-90deg);
 }
 
 .main-index article:hover {
     box-shadow: 1px 1px 15px grey;
-}
-
-
-.truck i {
-    border: 1px solid #39b54a;
-    border-radius: 50ch;
-    color: #39b54a;
-    padding: 15px;
-
-
-}
-
-
-
-.truck {
-    margin: 1px;
-    text-align: right;
-}
-
-.prec-desc {
-
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.prec-desc .precio {
-    width: 30%;
-}
-
-.prec-desc .descuento {
-    padding-left: 15px;
-    width: 70%;
-
 }
 
 .section-product {
@@ -272,7 +197,66 @@ header {
 }
 
 .product {
+    transition: all 0.8s;
     width: 100%;
+}
+
+.product img {
+    border-bottom: 1px solid #ebebeb;
+    width: 100%;
+
+}
+
+.precio {
+    font-size: 18px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    text-align: left;
+    width: 30%;
+}
+
+.descuento {
+    color: #39b54a;
+    font-size: 16px;
+    margin-top: 1px;
+    text-align: left;
+    padding-left: 15px;
+    width: 70%;
+}
+
+.prec-desc {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.truck i {
+    border: 1px solid #39b54a;
+    border-radius: 50ch;
+    color: #39b54a;
+    padding: 15px;
+
+
+}
+
+.truck {
+    margin: 1px;
+    text-align: right;
+}
+
+.main-index article:hover .truck i {
+    transition: 2s;
+    transform: rotatez(-90deg);
+}
+
+.main-index h3 {
+
+    color: #666;
+    font-size: 16px;
+    padding-top: 15px;
+    text-align: left;
+    /*opacity: 0; esta opcion es haciendolo transparente*/
 }
 
 /*-------------------------------------- FIN MAIN INDEX   -----------------------------------*/
@@ -285,13 +269,18 @@ header {
     background-color: #ebebeb;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     padding: 5px;
     max-width: 450px;
     width: 65%;
 
 }
+
+.form-Reg input {
+    outline: none;
+}
+
 
 .form__nombre {
     margin-bottom: 20px;
@@ -366,12 +355,6 @@ header {
     width: 85%;
 }
 
-
-
-
-
-
-
 .form__fecha label {
     margin-bottom: 10px;
     margin-left: 10px;
@@ -399,22 +382,15 @@ header {
 }
 
 .form__domicilio label {
-
     margin-bottom: 10px;
     margin-left: 10px;
     font-weight: bold;
     padding-bottom: 10px;
-
-
-
 }
-
 
 .form__interes label {
     display: block;
     width: 100%;
-
-
 }
 
 .form__perfil__title {
@@ -433,9 +409,6 @@ header {
 
 .form-check-compr {
     padding-left: 10px;
-
-
-
 }
 
 .form-check-compr label {
@@ -519,7 +492,6 @@ header {
 
 }
 
-
 .form__button {
 
     background-color: #1259c3;
@@ -536,22 +508,18 @@ header {
     justify-content: space-around;
 }
 
-.form-Reg input:hover {
-    box-shadow: 0 0 5px 0 #095484;
-}
-
-.form-Reg input {
-    outline: none;
-}
-
-.form-Reg label:hover {
-    color: #095484;
-}
-
 .form__button:hover {
     background-color: #0022AA;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+.form-Reg input:hover {
+    box-shadow: 0 0 5px 0 #095484;
+}
+
+.form-Reg label:hover {
+    color: #095484;
 }
 
 .form-Reg input[type="text"]:focus:required:valid {
@@ -572,17 +540,63 @@ header {
 
 }
 
-
-
-
-
-
-
 /*---------------------------------------------------FIN MAINREGISTRO-------------------------------------------*/
-
-
 /*---------------------------------------------------INICIO MAIN LOGIN-------------------------------------------*/
 
+
+.usuario {
+    text-align: center;
+}
+
+.section-login__button {
+
+    text-align: center;
+}
+
+.section-login {
+    background-color: #ebebeb;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+.section-login:hover {
+    box-shadow: 1px 1px 15px grey;
+}
+
+.usuario__nombre input {
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    max-width: 300px;
+    margin-top: 30px;
+    padding: 5px;
+    width: 90%;
+}
+
+.usuario__pass input {
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    max-width: 300px;
+    padding: 5px;
+    width: 90%;
+}
+
+.form-login input:hover {
+    box-shadow: 0 0 5px 0 #095484;
+}
+
+.form-login input {
+    outline: none;
+}
+
+.form-login label:hover {
+    color: #095484;
+
+}
 .button-login {
     background-color: #1259c3;
     border-radius: 8px;
@@ -595,72 +609,7 @@ header {
     text-align: center;
     transition: all 0.8s;
     width: 90%;
-
-
 }
-
-.usuario {
-
-    text-align: center;
-
-}
-
-.section-login__button {
-
-    text-align: center;
-}
-
-.section-login {
-    background-color: #ebebeb;
-    margin-top: 16px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-}
-
-.section-login:hover {
-    box-shadow: 1px 1px 15px grey;
-}
-
-
-
-.usuario__nombre input {
-    border: none;
-    border-radius: 5px;
-    margin: 20px;
-    max-width: 300px;
-    margin-top: 30px;
-    padding: 5px;
-    width: 90%;
-
-}
-
-.usuario__pass input {
-    border: none;
-    border-radius: 5px;
-    margin: 20px;
-    max-width: 300px;
-    padding: 5px;
-    width: 90%;
-
-}
-
-.form-login input:hover {
-
-    box-shadow: 0 0 5px 0 #095484;
-
-}
-
-.form-login input {
-    outline: none;
-}
-
-.form-login label:hover {
-    color: #095484;
-
-}
-
 
 .button-login:hover {
     background-color: #0022AA;
@@ -676,20 +625,9 @@ header {
     border: 2px solid red;
 }
 
+
 /*---------------------------------------------------FIN MAIN LOGIN-------------------------------------------*/
-
-
-
-
-
 /*-------------------------------------- INICIO FOOTER-----------------------------------*/
-.iconFooter {
-    color: #1259c3;
-    font-size: 2em;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
 footer {
     font-family: "Roboto";
     margin-top: 20px;
@@ -697,35 +635,18 @@ footer {
     text-align: center;
 }
 
-.section-paga__p {
-    color: #666;
-    font-size: 15px;
-    margin-bottom: 50px;
-    margin-left: 1px;
-    margin-right: 1px;
-    margin-top: 1px;
-    padding-left: 40px;
-    padding-right: 30px;
+.iconFooter {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.footer h2 {
-    color: #666;
-    font-size: 20px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
-
-.copy {
-    font-size: 15px;
-    padding-left: 1px;
-    text-align: left;
-}
-
-.section-paga .iconFooter i {
+.section-seg .iconFooter i {
     transition: all 0.8s;
 }
 
-.section-paga:hover .iconFooter i {
+.section-seg:hover .iconFooter i {
     color: #39b54a;
     transform: scale(1.2);
 }
@@ -739,101 +660,90 @@ footer {
     transform: scale(1.2);
 }
 
-.section-seg .iconFooter i {
+.section-paga__p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+.section-paga .iconFooter i {
     transition: all 0.8s;
 }
 
-.section-seg:hover .iconFooter i {
+.section-paga:hover .iconFooter i {
     color: #39b54a;
     transform: scale(1.2);
 }
 
+.footer h2 {
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.copy {
+    color: #666;
+    font-size: 15px;
+    margin-left: 45px;
+    margin-bottom: 25px;
+    padding-left: 1px;
+    text-align: left;
+}
 
 /*-------------------------------------- FIN FOOTER-----------------------------------*/
-
-
-
-
 /*-------------------------------------- INICIO MEDIA QUERI 361 576-----------------------------------*/
 @media (min-width: 361px) {
 
-    /* *{
-        box-shadow: 0px 0px 10px rgb(100,100,100);
-
-} */
     body nav {
         display: block;
     }
 
     .main-index h3 {
-
         display: block;
-
     }
 
     .burguer {
         display: none;
     }
-
-
-
-
-
-    /*-------------------------------------- FIN MEDIA QUERI 361 576-----------------------------------*/
-    /*-------------------------------------- INICIO MEDIA QUERI 576 769-----------------------------------*/
-
-    @media(min-width: 576px) {
-
-
-        .main-nav {
-
-            text-align: center;
-
-
-
-        }
-
-
-
-
-
-
-    }
-
-
-
-
-    /*-------------------------------------- FIN MEDIA QUERI 576 769-----------------------------------*/
-
-    /*-------------------------------------- INICIO MEDIA QUERI 769  992-----------------------------------*/
-
 }
 
+/*-------------------------------------- FIN MEDIA QUERI 361 576-----------------------------------*/
+/*-------------------------------------- INICIO MEDIA QUERI 576 769-----------------------------------*/
+@media(min-width: 576px) {
+    .main-nav {
+        text-align: center;
+    }
+}
+
+/*-------------------------------------- FIN MEDIA QUERI 576 769-----------------------------------*/
+/*-------------------------------------- INICIO MEDIA QUERI 769  992-----------------------------------*/
 @media(min-width: 769px) {
-
-    .top-bar__img img{
-
+    .top-bar__img img {
         width: 187px;
     }
-    .top-bar__img{
+
+    .top-bar__img {
         width: 25%;
     }
-    .top-bar__form{
+
+    .top-bar__form {
         width: 40%;
     }
-    .top-bar__text{
+
+    .top-bar__text {
         text-align: left;
         width: 35%;
     }
 
-
-
-
-
     .main-nav {
         display: flex;
         justify-content: space-between;
-
     }
 
     .main-nav ul {
@@ -846,15 +756,12 @@ footer {
     }
 
     .main-index h3 {
-
         display: block;
-
     }
 
     .burguer {
         display: none;
     }
-
 
     .product {
         width: 44%;
@@ -862,27 +769,22 @@ footer {
 
     .cont-footer {
         display: flex;
-
-
     }
-
-
-
-
-
 }
 
 /*-------------------------------------- FIN MEDIA QUERI 768 992-----------------------------------*/
 
 /*-------------------------------------- INICIO MEDIA QUERI 992 INFINITO-----------------------------------*/
 @media (min-width: 992px) {
-.top-bar__text{
-    text-align: center;
-}
-.top-bar__img img{
+    .top-bar__text {
+        text-align: center;
+    }
 
-    width: 240px;
-}
+    .top-bar__img img {
+
+        width: 240px;
+    }
+
     .main-nav {
 
         margin: auto;
@@ -891,43 +793,29 @@ footer {
     .main-nav li {
         font-size: 19px;
     }
-.lista-superior li{
-    margin-right: 25px;
-}
 
+    .lista-superior li {
+        margin-right: 25px;
+    }
 
     .product {
         width: 22%;
 
     }
 
-    
-
     .main-index article {
         border-bottom: none;
-
     }
 
     .product h3 {
         display: none;
-
-
     }
-
 
     .product:hover h3 {
         display: block;
-
-
         /*opacity: 1; esta opcion es haciendolo transparente*/
     }
-
-
-
-
-
-
-
 }
 
-    /*-------------------------------------- FIN MEDIA QUERI 992 INFINITO-----------------------------------*/
+
+/*-------------------------------------- FIN MEDIA QUERI 992 INFINITO-----------------------------------*
