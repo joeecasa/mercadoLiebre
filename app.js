@@ -1,7 +1,8 @@
 const express = require("express")
 const path = require("path")
 const app = express()
-app.listen(3000,()=>console.log("servidor corriendo en 3000"))
+const puerto = 4000
+app.listen(puerto,()=>console.log("servidor corriendo en " + puerto))
 
 app.use(express.static("public"));
 

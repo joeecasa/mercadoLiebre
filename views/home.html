@@ -17,33 +17,41 @@
 
 <body>
     <header class="main-header">
-        <div class="top-bar">
 
-            <div class="img-form">
-                <img src="img/logo-mercado-liebre.svg" alt="logo mercado liebre" class="imgMercado">
-
-                <form class="formulario" action="/action_page.php" method="GET">
-                    <label for="fname"></label>
-                    <input type="text" id="fname" name="fname" value="Buscar productos, marcas">
-                    <button type="submit" class="lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <br>
-                </form>
-
+        <section class="top-bar">
+            <div class="top-bar__img">
+                <a href="/">
+                    <img  src="img/logo-mercado-liebre.svg" alt="logo mercado liebre">
+                </a>
 
             </div>
 
-            <h2 class="compra"><i class="fa-solid fa-hand-holding-dollar"></i>
-                Comprá en cuotas y sin tarjeta de credito
-            </h2>
 
-        </div>
+            <form class="top-bar__form" action="#" method="POST">
+
+                <input type="text" id="fname" name="fname" value="Buscar productos, marcas">
+
+                <button type="submit" class="lupa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+                
+            </form>
+
+
+            <P class="top-bar__text">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de credito
+            </P>
+
+        </section>
 
 
         <nav class="main-nav">
             <ul class="lista-superior">
 
 
-                <li class="ofertas"><a href="#">Ofertas</a></li>
+                <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
@@ -57,7 +65,7 @@
                 </li>
                 <li><a href="/login">Ingresá<span class="iconMenu"><i
                                 class="fa-solid fa-arrow-right-to-bracket"></i></span></a></li>
-                <li><a href="#">Mis compras<span class="iconMenu"><i class="fa-solid fa-bag-shopping"></i></span></a>
+                <li class="last-li"><a href="#">Mis compras<span class="iconMenu"><i class="fa-solid fa-bag-shopping"></i></span></a>
                 </li>
 
             </ul>
@@ -160,7 +168,7 @@
                         <p class="descuento">40% OFF</p>
                     </div>
                     <div>
-                        <h3 >Cafetera Moulinex</h3>
+                        <h3>Cafetera Moulinex</h3>
                     </div>
                 </article>
                 <article class="product">
@@ -232,7 +240,7 @@
             </section>
             <br>
         </div>
-        
+
         <section>
 
             <p class="section-paga__p" class="copy">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
