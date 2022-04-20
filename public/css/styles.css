@@ -137,6 +137,7 @@ header {
     align-items: center;
     background-color: white;
     border: none;
+    cursor: pointer;
     display: flex;
     margin-bottom: 0px;
     padding: 3px;
@@ -180,6 +181,7 @@ header {
 .main-index article {
     border-top: 1px solid #ebebeb;
     background-color: white;
+    cursor: pointer;
     margin: 10px;
     margin-bottom: 35px;
     padding: 15px;
