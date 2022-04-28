@@ -1,27 +1,32 @@
 const express = require("express")
 const path = require("path")
 const app = express()
-const puerto = 3000
+const puerto = 3030
 app.listen(process.env.PORT || puerto, ()=>console.log("servidor corriendo en " + puerto))
+const publicPath = path.resolve(__dirname,'./public')
+app.use(express.static(publicPath));
 
-app.use(express.static("public"));
+const rutasMain = require ("./routes/main")
+app.use("/", rutasMain)
 
-// app.use("/static",express.static(__dirname,))
 
-app.get("/",(req, res) =>{
-    res.sendFile(path.join(__dirname,"/views/home.html"))
-})
 
-app.get("/registro",(req, res) =>{
-    res.sendFile(path.join(__dirname,"/views/register.html"))
-})
 
-app.get("/login",(req, res) =>{
-    res.sendFile(path.join(__dirname,"/views/login.html"))
-})
 
-app.post("/",(req, res) =>{
-    res.sendFile(path.join(__dirname,"/views/home.html"))
-})
+// app.get("/",(req, res) =>{
+//     res.sendFile(path.join(__dirname,"/src/views/home.html"))
+// })
+
+// app.get("/registro",(req, res) =>{
+//     res.sendFile(path.join(__dirname,"src/views/register.html"))
+// })
+
+// app.get("/login",(req, res) =>{
+//     res.sendFile(path.join(__dirname,"src/views/login.html"))
+// })
+
+// app.post("/",(req, res) =>{
+//     res.sendFile(path.join(__dirname,"src/views/home.html"))
+// })
 
 
