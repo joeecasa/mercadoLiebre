@@ -1,0 +1,43 @@
+<%- include("./partials/head") %>
+<%- include("./partials/header") %>
+
+<body>
+    <main>
+        <section class="section-login">
+
+
+            <form action="/" method="POST" class="form-login">
+
+                <div class="usuario">
+
+                    <div class="usuario__nombre">
+                        <label for="name"></label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre de usuario" required minlength="4" >
+
+                    </div>
+                    <div class="usuario__pass">
+                        <label for="password"></label>
+                        <input type="password" name="nombre" id="nombre" placeholder="Contraseña" required minlength="4"> 
+
+                    </div>
+
+                </div>
+
+
+                <div class="section-login__button">
+
+                    <button class="button-login" type="submit">Enviar</button>
+
+                </div>
+
+
+            </form>
+        </section>
+
+    </main>
+    <%- include("./partials/footer") %>
+
+
+</body>
+
+</html>
